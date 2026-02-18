@@ -1,0 +1,2 @@
+
+6db50f9ab5a8fdd4ac07a23e8b67bd27454e7225	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@expo%2fmetro-runtime","integrity":null,"time":1771354059376,"size":"0","metadata":{"time":1771354059375,"url":"http://registry.npmjs.org/@expo%2fmetro-runtime","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:47:39 GMT","location":"https://registry.npmjs.org/@expo%2Fmetro-runtime","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

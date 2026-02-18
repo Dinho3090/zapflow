@@ -1,0 +1,2 @@
+
+b7ade6d30b3380e49e03118e3272300d5cb81374	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/stylus","integrity":null,"time":1771354076989,"size":"0","metadata":{"time":1771354076989,"url":"http://registry.npmjs.org/stylus","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:47:56 GMT","location":"https://registry.npmjs.org/stylus","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

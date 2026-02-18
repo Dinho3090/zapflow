@@ -1,0 +1,2 @@
+
+a17f049907387283e7935a5dcf98dd16bbf70871	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/etag","integrity":null,"time":1771354173806,"size":"0","metadata":{"time":1771354173806,"url":"http://registry.npmjs.org/etag","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:33 GMT","location":"https://registry.npmjs.org/etag","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+8a047766d2a44040d2063784c4d5772dab253a84	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/sqlite3","integrity":null,"time":1771354064417,"size":"0","metadata":{"time":1771354064416,"url":"http://registry.npmjs.org/sqlite3","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:47:44 GMT","location":"https://registry.npmjs.org/sqlite3","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

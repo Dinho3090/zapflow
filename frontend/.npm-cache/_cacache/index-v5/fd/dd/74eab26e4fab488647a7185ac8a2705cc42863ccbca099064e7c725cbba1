@@ -1,0 +1,2 @@
+
+22d0d59c521ac80a358a386b0efe32c3d0911e9b	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@rollup%2frollup-freebsd-x64","integrity":null,"time":1771354215069,"size":"0","metadata":{"time":1771354215069,"url":"http://registry.npmjs.org/@rollup%2frollup-freebsd-x64","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:14 GMT","location":"https://registry.npmjs.org/@rollup%2Frollup-freebsd-x64","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

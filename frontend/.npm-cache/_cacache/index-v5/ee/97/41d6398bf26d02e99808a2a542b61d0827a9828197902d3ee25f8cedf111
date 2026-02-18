@@ -1,0 +1,2 @@
+
+a6afd0fe8e368da49592e6e0813b67163c0529c9	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/get-nonce","integrity":null,"time":1771354200300,"size":"0","metadata":{"time":1771354200300,"url":"http://registry.npmjs.org/get-nonce","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:59 GMT","location":"https://registry.npmjs.org/get-nonce","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

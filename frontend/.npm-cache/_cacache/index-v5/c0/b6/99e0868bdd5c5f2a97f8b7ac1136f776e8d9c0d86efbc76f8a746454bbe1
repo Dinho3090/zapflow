@@ -1,0 +1,2 @@
+
+7bdeb651fddfc9a8dd41437f42ce7e7e83037219	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@supabase%2fsupabase-js","integrity":null,"time":1771355493890,"size":"0","metadata":{"time":1771355493890,"url":"http://registry.npmjs.org/@supabase%2fsupabase-js","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 19:11:33 GMT","location":"https://registry.npmjs.org/@supabase%2Fsupabase-js","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

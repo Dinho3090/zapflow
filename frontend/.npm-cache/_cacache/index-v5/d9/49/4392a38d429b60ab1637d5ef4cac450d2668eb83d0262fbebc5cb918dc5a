@@ -1,0 +1,2 @@
+
+809e73c349ffa0603e0526c2ef17d9cf7c327ca3	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.25.12.tgz","integrity":null,"time":1771354221619,"size":"0","metadata":{"time":1771354221618,"url":"http://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.25.12.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:21 GMT","location":"https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.25.12.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

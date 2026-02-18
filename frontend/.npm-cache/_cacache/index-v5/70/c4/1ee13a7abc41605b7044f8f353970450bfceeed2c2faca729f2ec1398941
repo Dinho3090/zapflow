@@ -1,0 +1,2 @@
+
+355465647a1d627cbe855872f6120fc1668e5f60	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/sugarss","integrity":null,"time":1771354077113,"size":"0","metadata":{"time":1771354077113,"url":"http://registry.npmjs.org/sugarss","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:47:56 GMT","location":"https://registry.npmjs.org/sugarss","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

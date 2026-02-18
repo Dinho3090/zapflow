@@ -1,0 +1,2 @@
+
+92654647eb4f6b34f8aba92f695d120d7c08a512	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/d3-time-format","integrity":null,"time":1771354213237,"size":"0","metadata":{"time":1771354213237,"url":"http://registry.npmjs.org/d3-time-format","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:12 GMT","location":"https://registry.npmjs.org/d3-time-format","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

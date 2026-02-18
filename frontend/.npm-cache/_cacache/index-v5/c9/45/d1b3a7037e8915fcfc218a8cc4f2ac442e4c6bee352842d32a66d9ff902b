@@ -1,0 +1,2 @@
+
+832d5ae46471acca46ac678fc31c380e764a1c70	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/gensync","integrity":null,"time":1771354193883,"size":"0","metadata":{"time":1771354193883,"url":"http://registry.npmjs.org/gensync","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:53 GMT","location":"https://registry.npmjs.org/gensync","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

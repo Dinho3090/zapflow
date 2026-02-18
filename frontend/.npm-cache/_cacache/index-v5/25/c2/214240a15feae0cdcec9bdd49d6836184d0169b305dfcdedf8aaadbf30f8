@@ -1,0 +1,2 @@
+
+052d444e4c0be5e9ebdd97697cd980ae40c7a758	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@supabase%2fauth-helpers-nextjs","integrity":null,"time":1771355493227,"size":"0","metadata":{"time":1771355493227,"url":"http://registry.npmjs.org/@supabase%2fauth-helpers-nextjs","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 19:11:32 GMT","location":"https://registry.npmjs.org/@supabase%2Fauth-helpers-nextjs","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

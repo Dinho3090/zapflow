@@ -1,0 +1,2 @@
+
+8b4f0eebcc115c5935a9913b4c7d0894cf3f4086	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/tinybench/-/tinybench-2.9.0.tgz","integrity":null,"time":1771354218519,"size":"0","metadata":{"time":1771354218519,"url":"http://registry.npmjs.org/tinybench/-/tinybench-2.9.0.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:18 GMT","location":"https://registry.npmjs.org/tinybench/-/tinybench-2.9.0.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

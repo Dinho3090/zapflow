@@ -1,0 +1,2 @@
+
+3890011cc6ee2eb123f60639333b5f2747015578	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/fresh/-/fresh-2.0.0.tgz","integrity":null,"time":1771354219383,"size":"0","metadata":{"time":1771354219383,"url":"http://registry.npmjs.org/fresh/-/fresh-2.0.0.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:19 GMT","location":"https://registry.npmjs.org/fresh/-/fresh-2.0.0.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+febf12401b1a99171b4ea69d68fcc590c142668b	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@vitest%2fexpect","integrity":null,"time":1771354176836,"size":"0","metadata":{"time":1771354176836,"url":"http://registry.npmjs.org/@vitest%2fexpect","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:36 GMT","location":"https://registry.npmjs.org/@vitest%2Fexpect","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

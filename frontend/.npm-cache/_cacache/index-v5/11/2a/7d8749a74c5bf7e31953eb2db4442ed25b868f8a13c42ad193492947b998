@@ -1,0 +1,2 @@
+
+42d6f85c775536a49bbdb7003432bf19e61acbb8	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@xata.io%2fclient","integrity":null,"time":1771354056194,"size":"0","metadata":{"time":1771354056194,"url":"http://registry.npmjs.org/@xata.io%2fclient","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:47:35 GMT","location":"https://registry.npmjs.org/@xata.io%2Fclient","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

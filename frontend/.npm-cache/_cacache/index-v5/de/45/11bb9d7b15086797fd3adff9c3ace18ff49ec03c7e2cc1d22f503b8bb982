@@ -1,0 +1,2 @@
+
+d1cb936b1fd2e6137e545c28416033542aae394c	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@smithy%2fquerystring-parser","integrity":null,"time":1771354181330,"size":"0","metadata":{"time":1771354181330,"url":"http://registry.npmjs.org/@smithy%2fquerystring-parser","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:40 GMT","location":"https://registry.npmjs.org/@smithy%2Fquerystring-parser","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

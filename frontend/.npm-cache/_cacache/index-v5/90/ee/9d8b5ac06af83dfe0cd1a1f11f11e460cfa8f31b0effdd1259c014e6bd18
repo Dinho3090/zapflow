@@ -1,0 +1,2 @@
+
+8f3dd69743d55c2ce7a5b6d5cf82a3acd4a28600	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@medv%2ffinder","integrity":null,"time":1771354176405,"size":"0","metadata":{"time":1771354176405,"url":"http://registry.npmjs.org/@medv%2ffinder","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:36 GMT","location":"https://registry.npmjs.org/@medv%2Ffinder","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

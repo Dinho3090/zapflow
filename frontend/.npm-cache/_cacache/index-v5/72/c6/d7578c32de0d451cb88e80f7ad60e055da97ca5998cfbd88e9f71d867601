@@ -1,0 +1,2 @@
+
+bad88b86efc60d50cc96924ba0c794faba070173	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/fastq/-/fastq-1.20.1.tgz","integrity":null,"time":1771354471665,"size":"0","metadata":{"time":1771354471665,"url":"http://registry.npmjs.org/fastq/-/fastq-1.20.1.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:54:31 GMT","location":"https://registry.npmjs.org/fastq/-/fastq-1.20.1.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+51040620abdd0d8a34f49f9caa7c048a6243b9ff	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@babel%2fcore","integrity":null,"time":1771354170833,"size":"0","metadata":{"time":1771354170833,"url":"http://registry.npmjs.org/@babel%2fcore","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:30 GMT","location":"https://registry.npmjs.org/@babel%2Fcore","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

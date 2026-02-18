@@ -1,0 +1,2 @@
+
+66710501dd56363f179fa6af6564eeb41bdbb72a	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/why-is-node-running","integrity":null,"time":1771354177169,"size":"0","metadata":{"time":1771354177169,"url":"http://registry.npmjs.org/why-is-node-running","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:36 GMT","location":"https://registry.npmjs.org/why-is-node-running","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

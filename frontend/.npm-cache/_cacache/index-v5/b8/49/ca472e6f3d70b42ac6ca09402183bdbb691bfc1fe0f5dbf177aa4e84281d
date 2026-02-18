@@ -1,0 +1,2 @@
+
+d2561c622dda46ea177595ea97844ce3f321605e	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/mdast-util-gfm-strikethrough","integrity":null,"time":1771354210879,"size":"0","metadata":{"time":1771354210879,"url":"http://registry.npmjs.org/mdast-util-gfm-strikethrough","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:10 GMT","location":"https://registry.npmjs.org/mdast-util-gfm-strikethrough","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

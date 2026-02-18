@@ -1,0 +1,2 @@
+
+9834680e6bbe5a2dac3cc2293dc909e997fcd3bc	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@radix-ui%2freact-direction","integrity":null,"time":1771354166586,"size":"0","metadata":{"time":1771354166586,"url":"http://registry.npmjs.org/@radix-ui%2freact-direction","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:26 GMT","location":"https://registry.npmjs.org/@radix-ui%2Freact-direction","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

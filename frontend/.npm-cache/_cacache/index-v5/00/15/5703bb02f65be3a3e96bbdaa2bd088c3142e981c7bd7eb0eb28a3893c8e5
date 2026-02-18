@@ -1,0 +1,2 @@
+
+978d47abb4bedeeabda7b0a1c0693175f72fe01d	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@types%2fuse-sync-external-store","integrity":null,"time":1771354200617,"size":"0","metadata":{"time":1771354200617,"url":"http://registry.npmjs.org/@types%2fuse-sync-external-store","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:00 GMT","location":"https://registry.npmjs.org/@types%2Fuse-sync-external-store","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

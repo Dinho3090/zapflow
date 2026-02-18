@@ -1,0 +1,2 @@
+
+16b801e5215b5a3b86230bdab64de3f581c44f68	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/mdast-util-gfm-task-list-item","integrity":null,"time":1771354210876,"size":"0","metadata":{"time":1771354210875,"url":"http://registry.npmjs.org/mdast-util-gfm-task-list-item","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:10 GMT","location":"https://registry.npmjs.org/mdast-util-gfm-task-list-item","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

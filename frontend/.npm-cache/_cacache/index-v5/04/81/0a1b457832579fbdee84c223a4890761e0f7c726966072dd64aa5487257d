@@ -1,0 +1,2 @@
+
+9a33b90e5cba57041276b512d2d7560404ecfd50	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@types%2frange-parser","integrity":null,"time":1771354192885,"size":"0","metadata":{"time":1771354192885,"url":"http://registry.npmjs.org/@types%2frange-parser","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:52 GMT","location":"https://registry.npmjs.org/@types%2Frange-parser","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+338f5f1a63f68a83bc353cef2f91475f290c3ad9	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/micromark-factory-whitespace","integrity":null,"time":1771354208165,"size":"0","metadata":{"time":1771354208165,"url":"http://registry.npmjs.org/micromark-factory-whitespace","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:07 GMT","location":"https://registry.npmjs.org/micromark-factory-whitespace","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

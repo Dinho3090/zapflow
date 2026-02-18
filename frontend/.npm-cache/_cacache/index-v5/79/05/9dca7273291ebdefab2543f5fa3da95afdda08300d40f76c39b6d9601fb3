@@ -1,0 +1,2 @@
+
+3ba795b5b1e515014e7886513527308c404620bd	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/rehype-harden","integrity":null,"time":1771354175589,"size":"0","metadata":{"time":1771354175589,"url":"http://registry.npmjs.org/rehype-harden","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:35 GMT","location":"https://registry.npmjs.org/rehype-harden","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

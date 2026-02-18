@@ -1,0 +1,2 @@
+
+d4083c14536e232fb0daf67b2ac850d935c99649	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/micromark-factory-destination","integrity":null,"time":1771354208155,"size":"0","metadata":{"time":1771354208155,"url":"http://registry.npmjs.org/micromark-factory-destination","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:07 GMT","location":"https://registry.npmjs.org/micromark-factory-destination","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

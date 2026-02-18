@@ -1,0 +1,2 @@
+
+b371c4dbe9fbd04919d2f957e11cc6e0ee6c98e0	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@smithy%2fmiddleware-stack","integrity":null,"time":1771354163560,"size":"0","metadata":{"time":1771354163560,"url":"http://registry.npmjs.org/@smithy%2fmiddleware-stack","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:23 GMT","location":"https://registry.npmjs.org/@smithy%2Fmiddleware-stack","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+473f07b56e471c97d8cf6094a0742a3fbe03151f	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@libsql%2fclient","integrity":null,"time":1771354043307,"size":"0","metadata":{"time":1771354043307,"url":"http://registry.npmjs.org/@libsql%2fclient","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:47:22 GMT","location":"https://registry.npmjs.org/@libsql%2Fclient","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

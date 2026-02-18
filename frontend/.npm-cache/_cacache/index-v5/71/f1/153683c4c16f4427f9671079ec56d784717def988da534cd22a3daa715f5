@@ -1,0 +1,2 @@
+
+785452cead6eb691e513aaf623a323c095000a75	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/web-namespaces","integrity":null,"time":1771354209265,"size":"0","metadata":{"time":1771354209264,"url":"http://registry.npmjs.org/web-namespaces","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:08 GMT","location":"https://registry.npmjs.org/web-namespaces","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+ca56b3e0860b2c1ef7710011fc59f5f59f7936ca	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/remend","integrity":null,"time":1771354176024,"size":"0","metadata":{"time":1771354176024,"url":"http://registry.npmjs.org/remend","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:35 GMT","location":"https://registry.npmjs.org/remend","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

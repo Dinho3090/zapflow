@@ -1,0 +1,2 @@
+
+2e01e6f7cb6263365f3d4e11825060f23bb66af5	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@supabase/storage-js/-/storage-js-2.96.0.tgz","integrity":null,"time":1771355508688,"size":"0","metadata":{"time":1771355508688,"url":"http://registry.npmjs.org/@supabase/storage-js/-/storage-js-2.96.0.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 19:11:47 GMT","location":"https://registry.npmjs.org/@supabase/storage-js/-/storage-js-2.96.0.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────
+# ZapFlow Backend — Dockerfile
+# Node 20 Alpine · Produção
+# ─────────────────────────────────────────────────────────
+FROM node:20-alpine AS base
+WORKDIR /app
+RUN apk add --no-cache dumb-init
+
+# ── Dependências ─────────────────────────────────────────
+FROM base AS deps
+COPY package*.json ./
+RUN npm ci --omit=dev
+
+# ── Imagem final ─────────────────────────────────────────
+FROM base AS runner
+ENV NODE_ENV=production
+
+# Copia dependências e código-fonte
+COPY --from=deps /app/node_modules ./node_modules
+COPY src ./src
+COPY package.json ./
+
+# Usuário não-root por segurança
+RUN addgroup -g 1001 -S zapflow && \
+    adduser  -u 1001 -S zapflow -G zapflow && \
+    chown -R zapflow:zapflow /app
+USER zapflow
+
+# Pasta para uploads temporários
+RUN mkdir -p /app/uploads
+
+EXPOSE 3001
+
+# dumb-init para tratamento correto de sinais
+ENTRYPOINT ["dumb-init", "--"]
+CMD ["node", "src/server.js"]

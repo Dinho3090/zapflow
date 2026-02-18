@@ -1,0 +1,2 @@
+
+9adafa4c616cd618c7952084884a99f01021cb6e	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/forwarded","integrity":null,"time":1771354198610,"size":"0","metadata":{"time":1771354198610,"url":"http://registry.npmjs.org/forwarded","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:58 GMT","location":"https://registry.npmjs.org/forwarded","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

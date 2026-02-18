@@ -1,0 +1,2 @@
+
+5dfd65c3507b1288252e565b3b5e2d38e884e9d9	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/sucrase/-/sucrase-3.35.1.tgz","integrity":null,"time":1771354471724,"size":"0","metadata":{"time":1771354471724,"url":"http://registry.npmjs.org/sucrase/-/sucrase-3.35.1.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:54:31 GMT","location":"https://registry.npmjs.org/sucrase/-/sucrase-3.35.1.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

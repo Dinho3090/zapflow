@@ -1,0 +1,2 @@
+
+e0c27841c77e91db9dabe8766ee27a6cff95511a	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/regexparam","integrity":null,"time":1771354177290,"size":"0","metadata":{"time":1771354177290,"url":"http://registry.npmjs.org/regexparam","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:36 GMT","location":"https://registry.npmjs.org/regexparam","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}
