@@ -1,8 +1,6 @@
-// lib/api.js — Cliente HTTP tipado e ajustado
 import { createClient } from "@supabase/supabase-js";
 
-// Alterado de createBrowserClient para createClient para garantir compatibilidade
-const supabase = createClient(
+export const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL,
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 );
@@ -10,17 +8,13 @@ const supabase = createClient(
 async function getToken() {
   const {
     data: { session },
-    error,
   } = await supabase.auth.getSession();
-  if (error) return null;
   return session?.access_token || null;
 }
 
 async function request(method, path, body, isFormData = false) {
   const token = await getToken();
   const BASE = process.env.NEXT_PUBLIC_API_URL || "";
-
-  // Garantindo que os headers não quebrem se o token for null
   const headers = {};
   if (token) headers["Authorization"] = `Bearer ${token}`;
   if (!isFormData) headers["Content-Type"] = "application/json";
