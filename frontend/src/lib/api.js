@@ -1,10 +1,10 @@
-// ─────────────────────────────────────────────────────────
-// lib/api.js — Cliente HTTP para o ZapFlow Backend
-// Usa o token JWT do Supabase automaticamente
-// ─────────────────────────────────────────────────────────
-import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+// lib/api.js — Cliente HTTP tipado
+import { createBrowserClient } from '@supabase/supabase-js';
 
-const supabase = createClientComponentClient();
+const supabase = createBrowserClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+);
 
 async function getToken() {
   const { data: { session } } = await supabase.auth.getSession();
@@ -13,8 +13,7 @@ async function getToken() {
 
 async function request(method, path, body, isFormData = false) {
   const token = await getToken();
-  const BASE  = process.env.NEXT_PUBLIC_API_URL || '';
-
+  const BASE = process.env.NEXT_PUBLIC_API_URL || '';
   const headers = { Authorization: `Bearer ${token}` };
   if (!isFormData) headers['Content-Type'] = 'application/json';
 
@@ -29,59 +28,54 @@ async function request(method, path, body, isFormData = false) {
   return data;
 }
 
-// ── WhatsApp ──────────────────────────────────────────────
 export const whatsappApi = {
-  status:     ()     => request('GET',  '/api/whatsapp/status'),
-  connect:    ()     => request('GET',  '/api/whatsapp/connect'),
-  disconnect: ()     => request('POST', '/api/whatsapp/disconnect'),
+  status:     () => request('GET',  '/api/whatsapp/status'),
+  connect:    () => request('GET',  '/api/whatsapp/connect'),
+  disconnect: () => request('POST', '/api/whatsapp/disconnect'),
 };
 
-// ── Contatos ──────────────────────────────────────────────
 export const contactsApi = {
-  list:   (params = {}) => {
+  list: (params = {}) => {
     const q = new URLSearchParams(params).toString();
     return request('GET', `/api/contacts${q ? '?' + q : ''}`);
   },
-  tags:   ()            => request('GET', '/api/contacts/tags'),
+  tags: () => request('GET', '/api/contacts/tags'),
   import: (file, tags = []) => {
     const fd = new FormData();
     fd.append('file', file);
     if (tags.length) fd.append('x-tags', tags.join(','));
     return request('POST', '/api/contacts/import', fd, true);
   },
-  delete:     (id)  => request('DELETE', `/api/contacts/${id}`),
+  delete:     (id)       => request('DELETE', `/api/contacts/${id}`),
   updateTags: (id, tags) => request('PATCH', `/api/contacts/${id}/tags`, { tags }),
 };
 
-// ── Campanhas ─────────────────────────────────────────────
 export const campaignsApi = {
   list:     (params = {}) => {
     const q = new URLSearchParams(params).toString();
     return request('GET', `/api/campaigns${q ? '?' + q : ''}`);
   },
   calendar: (month, year) => request('GET', `/api/campaigns/calendar?month=${month}&year=${year}`),
-  get:      (id)           => request('GET', `/api/campaigns/${id}`),
-  create:   (body)         => request('POST', '/api/campaigns', body),
-  start:    (id)           => request('POST', `/api/campaigns/${id}/start`),
-  pause:    (id)           => request('POST', `/api/campaigns/${id}/pause`),
-  resume:   (id)           => request('POST', `/api/campaigns/${id}/resume`),
-  delete:   (id)           => request('DELETE', `/api/campaigns/${id}`),
-  report:   (id)           => request('GET', `/api/campaigns/${id}/report`),
+  get:      (id)          => request('GET', `/api/campaigns/${id}`),
+  create:   (body)        => request('POST', '/api/campaigns', body),
+  start:    (id)          => request('POST', `/api/campaigns/${id}/start`),
+  pause:    (id)          => request('POST', `/api/campaigns/${id}/pause`),
+  resume:   (id)          => request('POST', `/api/campaigns/${id}/resume`),
+  delete:   (id)          => request('DELETE', `/api/campaigns/${id}`),
+  report:   (id)          => request('GET', `/api/campaigns/${id}/report`),
 };
 
-// ── Automações ────────────────────────────────────────────
 export const automationsApi = {
-  list:   ()     => request('GET',  '/api/automations'),
-  get:    (id)   => request('GET',  `/api/automations/${id}`),
-  create: (body) => request('POST', '/api/automations', body),
+  list:   ()         => request('GET',  '/api/automations'),
+  get:    (id)       => request('GET',  `/api/automations/${id}`),
+  create: (body)     => request('POST', '/api/automations', body),
   update: (id, body) => request('PATCH', `/api/automations/${id}`, body),
-  delete: (id)   => request('DELETE', `/api/automations/${id}`),
+  delete: (id)       => request('DELETE', `/api/automations/${id}`),
 };
 
-// ── Mídia ─────────────────────────────────────────────────
 export const mediaApi = {
-  list:   (type)  => request('GET', `/api/media${type ? '?type=' + type : ''}`),
-  upload: (file)  => {
+  list:   (type) => request('GET', `/api/media${type ? '?type=' + type : ''}`),
+  upload: (file) => {
     const fd = new FormData();
     fd.append('file', file);
     return request('POST', '/api/media/upload', fd, true);

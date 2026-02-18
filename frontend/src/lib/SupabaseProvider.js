@@ -1,21 +1,22 @@
 'use client';
-// ─────────────────────────────────────────────────────────
-// components/providers/SupabaseProvider.js
-// Gerencia sessão e redireciona para /login se não autenticado
-// ─────────────────────────────────────────────────────────
+// Supabase Provider sem auth-helpers
 import { createContext, useContext, useEffect, useState } from 'react';
-import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+import { createBrowserClient } from '@supabase/supabase-js';
 import { useRouter, usePathname } from 'next/navigation';
 
 const Ctx = createContext(null);
-
-const PUBLIC_ROUTES = ['/login', '/registro', '/esqueci-senha'];
+const PUBLIC_ROUTES = ['/login', '/registro'];
 
 export function SupabaseProvider({ children }) {
-  const supabase = createClientComponentClient();
-  const router   = useRouter();
+  const router = useRouter();
   const pathname = usePathname();
-  const [session, setSession] = useState(undefined); // undefined = carregando
+  const [supabase] = useState(() =>
+    createBrowserClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+    )
+  );
+  const [session, setSession] = useState(undefined);
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -34,9 +35,8 @@ export function SupabaseProvider({ children }) {
       }
     );
     return () => subscription.unsubscribe();
-  }, [pathname]);
+  }, [pathname, supabase, router]);
 
-  // Tela de loading enquanto verifica sessão
   if (session === undefined && !PUBLIC_ROUTES.includes(pathname)) {
     return (
       <div className="min-h-screen bg-[#080b10] flex items-center justify-center">
@@ -48,11 +48,7 @@ export function SupabaseProvider({ children }) {
     );
   }
 
-  return (
-    <Ctx.Provider value={{ supabase, session }}>
-      {children}
-    </Ctx.Provider>
-  );
+  return <Ctx.Provider value={{ supabase, session }}>{children}</Ctx.Provider>;
 }
 
 export const useSupabase = () => useContext(Ctx);

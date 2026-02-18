@@ -52,7 +52,9 @@ services:
       - zf_net
 
   zf_backend:
-    build: ./backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.backend
     container_name: zf_backend
     restart: always
     ports: ["3001:3001"]
@@ -72,13 +74,15 @@ services:
       - zf_net
 
   zf_frontend:
-    build: ./frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.frontend
     container_name: zf_frontend
     restart: always
     ports: ["3000:3000"]
     environment:
-      - NEXT_PUBLIC_SUPABASE_URL=${SUPABASE_URL}
-      - NEXT_PUBLIC_SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY}
+      - NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL}
+      - NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}
       - NEXT_PUBLIC_API_URL=http://34.39.188.9:3001
     depends_on:
       - zf_backend
