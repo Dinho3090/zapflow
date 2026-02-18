@@ -1,10 +1,11 @@
 "use client";
+export const dynamic = "force-dynamic";
 // ─────────────────────────────────────────────────────────
 // app/dashboard/page.js — Home do Painel
 // Stats em tempo real + campanhas ativas + log ao vivo
 // ─────────────────────────────────────────────────────────
 import { useState, useEffect } from "react";
-import { campaignsApi, whatsappApi } from "@/lib/api";
+import { campaignsApi, whatsappApi } from "../../lib/api";
 import Link from "next/link";
 
 // ── Sub-componentes ────────────────────────────────────────
