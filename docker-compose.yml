@@ -84,4 +84,11 @@ services:
       - zf_backend
     networks:
       - zf_net
-# ... (restante do arquivo se mantém igual)
+
+networks:
+  zf_net:
+    driver: bridge
+
+volumes:
+  evolution_data:
+  postgres_data:
