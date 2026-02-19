@@ -77,6 +77,10 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile.frontend
+      args:
+        - NEXT_PUBLIC_API_URL=http:https://dstrclhmlmbgaolstadj.supabase.co
+        - NEXT_PUBLIC_SUPABASE_URL=https://dstrclhmlmbgaolstadj.supabase.co
+        - NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRzdHJjbGhtbG1iZ2FvbHN0YWRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEzMjU5NjQsImV4cCI6MjA4NjkwMTk2NH0.38IqmHrdh_dd6Ekj0Eypgh3AbrNEyEeMrB27jDzMDgM
     container_name: zf_frontend
     restart: always
     ports: ["3000:3000"]

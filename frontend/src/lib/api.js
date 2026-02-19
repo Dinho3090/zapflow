@@ -55,8 +55,8 @@ export const contactsApi = {
 
 export const campaignsApi = {
   list: (params = {}) => {
-    const q = new URLSearchParams(params).toString();
-    return request("GET", `/api/campaigns${q ? "?" + q : ""}`);
+    const query = new URLSearchParams(params).toString();
+    return request("GET", `/api/campaigns${query ? "?" + query : ""}`);
   },
   calendar: (month, year) =>
     request("GET", `/api/campaigns/calendar?month=${month}&year=${year}`),

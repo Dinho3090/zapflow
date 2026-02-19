@@ -36,7 +36,7 @@ RUN addgroup -g 1001 -S zapflow && \
 
 COPY --from=builder --chown=zapflow:zapflow /app/.next/standalone ./
 COPY --from=builder --chown=zapflow:zapflow /app/.next/static ./.next/static
-COPY --from=builder --chown=zapflow:zapflow /app/public ./public
+#COPY --from=builder --chown=zapflow:zapflow /app/public ./public
 
 USER zapflow
 EXPOSE 3000
