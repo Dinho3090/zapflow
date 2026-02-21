@@ -1,0 +1,2 @@
+
+526f883bc21ad819e314c0430f6ba7922f7b9e6d	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@smithy%2feventstream-serde-node","integrity":null,"time":1771354162280,"size":"0","metadata":{"time":1771354162280,"url":"http://registry.npmjs.org/@smithy%2feventstream-serde-node","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:21 GMT","location":"https://registry.npmjs.org/@smithy%2Feventstream-serde-node","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

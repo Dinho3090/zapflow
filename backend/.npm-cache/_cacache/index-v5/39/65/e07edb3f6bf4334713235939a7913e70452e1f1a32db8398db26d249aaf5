@@ -1,0 +1,2 @@
+
+389413db76a3d3cedba2c3ea1ee16af4f5188a18	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/fast-copy","integrity":null,"time":1771682047719,"size":"0","metadata":{"time":1771682047719,"url":"http://registry.npmjs.org/fast-copy","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:07 GMT","location":"https://registry.npmjs.org/fast-copy","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

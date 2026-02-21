@@ -1,0 +1,2 @@
+
+5460bbc199172558f3144c3336a66a028460d76d	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/react-native","integrity":null,"time":1771354046245,"size":"0","metadata":{"time":1771354046245,"url":"http://registry.npmjs.org/react-native","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:47:25 GMT","location":"https://registry.npmjs.org/react-native","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+c03a520e519ecc35c096be8cc368219d732b28d0	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/redux-thunk","integrity":null,"time":1771354200619,"size":"0","metadata":{"time":1771354200619,"url":"http://registry.npmjs.org/redux-thunk","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:00 GMT","location":"https://registry.npmjs.org/redux-thunk","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

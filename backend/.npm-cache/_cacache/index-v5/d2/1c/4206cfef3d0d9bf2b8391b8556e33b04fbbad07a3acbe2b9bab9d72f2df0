@@ -1,0 +1,2 @@
+
+1f8c394f411c2ba5e8621b3f04ad0f41e910a3ed	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/event-target-shim","integrity":null,"time":1771682053590,"size":"0","metadata":{"time":1771682053590,"url":"http://registry.npmjs.org/event-target-shim","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:13 GMT","location":"https://registry.npmjs.org/event-target-shim","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

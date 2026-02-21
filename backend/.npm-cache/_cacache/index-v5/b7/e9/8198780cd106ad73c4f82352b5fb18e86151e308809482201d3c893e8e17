@@ -1,0 +1,2 @@
+
+6a4e9d428f1dbc296cae54660cb75bd05de09937	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/json-schema-traverse","integrity":null,"time":1771682050384,"size":"0","metadata":{"time":1771682050384,"url":"http://registry.npmjs.org/json-schema-traverse","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:10 GMT","location":"https://registry.npmjs.org/json-schema-traverse","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

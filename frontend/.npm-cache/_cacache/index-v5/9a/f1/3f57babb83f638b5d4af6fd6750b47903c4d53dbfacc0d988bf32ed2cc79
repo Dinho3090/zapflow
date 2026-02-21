@@ -1,0 +1,2 @@
+
+7c4b8e86a2188804117e07e49801180daaa66dba	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/micromark-extension-gfm-tagfilter","integrity":null,"time":1771354211203,"size":"0","metadata":{"time":1771354211202,"url":"http://registry.npmjs.org/micromark-extension-gfm-tagfilter","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:10 GMT","location":"https://registry.npmjs.org/micromark-extension-gfm-tagfilter","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

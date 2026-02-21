@@ -1,0 +1,2 @@
+
+22f6b1c98ff6ba81b6fda1a6a0cc6e45651f2f93	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/obliterator","integrity":null,"time":1771682048422,"size":"0","metadata":{"time":1771682048422,"url":"http://registry.npmjs.org/obliterator","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:08 GMT","location":"https://registry.npmjs.org/obliterator","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

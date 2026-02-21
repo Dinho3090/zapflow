@@ -1,0 +1,2 @@
+
+b6cd69ea5d0c122481d3a84170228ea9b7c2fb8a	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@esbuild-kit%2fcore-utils","integrity":null,"time":1771354197045,"size":"0","metadata":{"time":1771354197044,"url":"http://registry.npmjs.org/@esbuild-kit%2fcore-utils","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:56 GMT","location":"https://registry.npmjs.org/@esbuild-kit%2Fcore-utils","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

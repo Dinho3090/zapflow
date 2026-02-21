@@ -1,0 +1,2 @@
+
+42b526f1c37e96e223f11125ed8fc0cee440ea40	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.15.tgz","integrity":null,"time":1771354218547,"size":"0","metadata":{"time":1771354218547,"url":"http://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.15.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:18 GMT","location":"https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.15.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

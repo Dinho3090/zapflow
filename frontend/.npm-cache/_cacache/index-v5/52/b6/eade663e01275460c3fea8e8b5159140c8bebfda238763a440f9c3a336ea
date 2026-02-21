@@ -1,0 +1,2 @@
+
+5d45d26a7cc837b66d35b43f0200f9e6502efeee	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/trough/-/trough-2.2.0.tgz","integrity":null,"time":1771354218632,"size":"0","metadata":{"time":1771354218632,"url":"http://registry.npmjs.org/trough/-/trough-2.2.0.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:18 GMT","location":"https://registry.npmjs.org/trough/-/trough-2.2.0.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

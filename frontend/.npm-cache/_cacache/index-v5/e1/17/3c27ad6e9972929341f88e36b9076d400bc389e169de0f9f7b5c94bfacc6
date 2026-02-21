@@ -1,0 +1,2 @@
+
+ffa7f77b5f7149c7721943c558ef24817c2ae71a	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/micromark-factory-title","integrity":null,"time":1771354208158,"size":"0","metadata":{"time":1771354208158,"url":"http://registry.npmjs.org/micromark-factory-title","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:07 GMT","location":"https://registry.npmjs.org/micromark-factory-title","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

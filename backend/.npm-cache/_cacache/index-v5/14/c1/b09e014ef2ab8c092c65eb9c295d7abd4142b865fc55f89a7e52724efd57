@@ -1,0 +1,2 @@
+
+c6bbb6fd4f67a2c764e4b05061f7c0fb2820f5de	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/detect-libc","integrity":null,"time":1771682052364,"size":"0","metadata":{"time":1771682052364,"url":"http://registry.npmjs.org/detect-libc","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:12 GMT","location":"https://registry.npmjs.org/detect-libc","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

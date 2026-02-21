@@ -1,0 +1,2 @@
+
+c2489ddf080172d67d5d19989383943870844ac6	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@types%2fbetter-sqlite3","integrity":null,"time":1771354052812,"size":"0","metadata":{"time":1771354052812,"url":"http://registry.npmjs.org/@types%2fbetter-sqlite3","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:47:32 GMT","location":"https://registry.npmjs.org/@types%2Fbetter-sqlite3","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

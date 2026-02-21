@@ -1,0 +1,2 @@
+
+a36627755f73e25dac6e7cea177e84f2339eaa25	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/express/-/express-5.2.1.tgz","integrity":null,"time":1771354220970,"size":"0","metadata":{"time":1771354220970,"url":"http://registry.npmjs.org/express/-/express-5.2.1.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:20 GMT","location":"https://registry.npmjs.org/express/-/express-5.2.1.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

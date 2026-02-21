@@ -1,0 +1,2 @@
+
+0fe867537902eb1054a8cd590d2e7141b0d07914	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@smithy%2fmiddleware-serde","integrity":null,"time":1771354163367,"size":"0","metadata":{"time":1771354163367,"url":"http://registry.npmjs.org/@smithy%2fmiddleware-serde","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:23 GMT","location":"https://registry.npmjs.org/@smithy%2Fmiddleware-serde","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

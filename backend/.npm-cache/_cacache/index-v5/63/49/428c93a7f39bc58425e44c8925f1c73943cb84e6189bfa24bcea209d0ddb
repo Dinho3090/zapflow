@@ -1,0 +1,2 @@
+
+8e81716eece2af289d30349fd3fd027b0ac31394	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@fastify%2fbusboy","integrity":null,"time":1771682045702,"size":"0","metadata":{"time":1771682045702,"url":"http://registry.npmjs.org/@fastify%2fbusboy","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:05 GMT","location":"https://registry.npmjs.org/@fastify%2Fbusboy","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+a24337ef4ad5fcbec48553840bbdb06b70f900e2	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/utf-8-validate","integrity":null,"time":1771355500845,"size":"0","metadata":{"time":1771355500845,"url":"http://registry.npmjs.org/utf-8-validate","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 19:11:40 GMT","location":"https://registry.npmjs.org/utf-8-validate","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+d648f506985aa6ea1a4f3a26fd5d4202664023a8	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@types/chai/-/chai-5.2.3.tgz","integrity":null,"time":1771354218509,"size":"0","metadata":{"time":1771354218509,"url":"http://registry.npmjs.org/@types/chai/-/chai-5.2.3.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:18 GMT","location":"https://registry.npmjs.org/@types/chai/-/chai-5.2.3.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

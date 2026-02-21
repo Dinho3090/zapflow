@@ -1,0 +1,2 @@
+
+222fb60a0de1a6766ea724a5ec8d755e4073e5cc	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@smithy%2finvalid-dependency","integrity":null,"time":1771354162856,"size":"0","metadata":{"time":1771354162856,"url":"http://registry.npmjs.org/@smithy%2finvalid-dependency","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:22 GMT","location":"https://registry.npmjs.org/@smithy%2Finvalid-dependency","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

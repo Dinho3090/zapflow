@@ -1,0 +1,2 @@
+
+2a673c18b7412c9447dae1f37b1492cda09dde84	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz","integrity":null,"time":1771354219303,"size":"0","metadata":{"time":1771354219303,"url":"http://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:18 GMT","location":"https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

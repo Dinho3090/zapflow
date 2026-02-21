@@ -1,0 +1,2 @@
+
+860648470cea92900162782c3e2b92b4e86bd747	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/on-exit-leak-free","integrity":null,"time":1771682047937,"size":"0","metadata":{"time":1771682047937,"url":"http://registry.npmjs.org/on-exit-leak-free","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:07 GMT","location":"https://registry.npmjs.org/on-exit-leak-free","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

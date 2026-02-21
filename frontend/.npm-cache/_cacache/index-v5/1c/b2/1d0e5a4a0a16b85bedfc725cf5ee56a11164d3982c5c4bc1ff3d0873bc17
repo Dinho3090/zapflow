@@ -1,0 +1,2 @@
+
+39dc3e11b341529c4e682aed1eab5194d032029f	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@supabase/auth-js/-/auth-js-2.96.0.tgz","integrity":null,"time":1771355508763,"size":"0","metadata":{"time":1771355508763,"url":"http://registry.npmjs.org/@supabase/auth-js/-/auth-js-2.96.0.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 19:11:48 GMT","location":"https://registry.npmjs.org/@supabase/auth-js/-/auth-js-2.96.0.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

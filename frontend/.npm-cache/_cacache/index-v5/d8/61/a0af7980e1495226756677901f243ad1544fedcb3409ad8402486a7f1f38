@@ -1,0 +1,2 @@
+
+e7ef9207441e3ae1748a23c49e2dcf66fc9afe77	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/redux","integrity":null,"time":1771354200637,"size":"0","metadata":{"time":1771354200637,"url":"http://registry.npmjs.org/redux","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:00 GMT","location":"https://registry.npmjs.org/redux","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

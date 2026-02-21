@@ -1,0 +1,2 @@
+
+40a4613609fa2d42d965d28b3e4984e1a6c71f1c	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/fast-uri/-/fast-uri-2.4.0.tgz","integrity":null,"time":1771682054680,"size":"0","metadata":{"time":1771682054680,"url":"http://registry.npmjs.org/fast-uri/-/fast-uri-2.4.0.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:14 GMT","location":"https://registry.npmjs.org/fast-uri/-/fast-uri-2.4.0.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

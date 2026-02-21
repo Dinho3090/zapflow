@@ -1,0 +1,2 @@
+
+45e4b03676ee1e202a1d7a2246735e30cfa6e48a	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/bowser/-/bowser-2.14.1.tgz","integrity":null,"time":1771354220258,"size":"0","metadata":{"time":1771354220258,"url":"http://registry.npmjs.org/bowser/-/bowser-2.14.1.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:19 GMT","location":"https://registry.npmjs.org/bowser/-/bowser-2.14.1.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+f5de4d20b82b6ccf47177feb3d88e0396270f9ef	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/stackback","integrity":null,"time":1771354216100,"size":"0","metadata":{"time":1771354216099,"url":"http://registry.npmjs.org/stackback","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:15 GMT","location":"https://registry.npmjs.org/stackback","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+546c757f5cc61a90479107408803be4dc65813b4	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/micromark-util-html-tag-name","integrity":null,"time":1771354208216,"size":"0","metadata":{"time":1771354208216,"url":"http://registry.npmjs.org/micromark-util-html-tag-name","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:07 GMT","location":"https://registry.npmjs.org/micromark-util-html-tag-name","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

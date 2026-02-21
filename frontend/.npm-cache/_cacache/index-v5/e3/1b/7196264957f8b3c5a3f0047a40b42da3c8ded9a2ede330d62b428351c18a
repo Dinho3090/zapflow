@@ -1,0 +1,2 @@
+
+d9a1604b75cf96f5f5ec04e994ba1c3e251b7005	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/mdast-util-gfm-table","integrity":null,"time":1771354210867,"size":"0","metadata":{"time":1771354210867,"url":"http://registry.npmjs.org/mdast-util-gfm-table","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:10 GMT","location":"https://registry.npmjs.org/mdast-util-gfm-table","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+db70dfad756bd2f7af7fdb850c1ebe1bf043cf8e	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/mdast-util-gfm-autolink-literal","integrity":null,"time":1771354210872,"size":"0","metadata":{"time":1771354210872,"url":"http://registry.npmjs.org/mdast-util-gfm-autolink-literal","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:10 GMT","location":"https://registry.npmjs.org/mdast-util-gfm-autolink-literal","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

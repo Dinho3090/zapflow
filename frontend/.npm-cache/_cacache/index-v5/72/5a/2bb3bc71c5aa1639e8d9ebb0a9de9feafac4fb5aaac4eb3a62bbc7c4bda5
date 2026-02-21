@@ -1,0 +1,2 @@
+
+3c444a81e2004f4d71e8c75d156330997d00fcc4	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@aws-sdk%2fmiddleware-host-header","integrity":null,"time":1771354160711,"size":"0","metadata":{"time":1771354160711,"url":"http://registry.npmjs.org/@aws-sdk%2fmiddleware-host-header","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:20 GMT","location":"https://registry.npmjs.org/@aws-sdk%2Fmiddleware-host-header","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

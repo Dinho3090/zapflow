@@ -1,0 +1,2 @@
+
+4e57f84ea78fa7059793784686bafd03ff7252fd	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@smithy%2fprotocol-http","integrity":null,"time":1771354164009,"size":"0","metadata":{"time":1771354164009,"url":"http://registry.npmjs.org/@smithy%2fprotocol-http","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:23 GMT","location":"https://registry.npmjs.org/@smithy%2Fprotocol-http","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

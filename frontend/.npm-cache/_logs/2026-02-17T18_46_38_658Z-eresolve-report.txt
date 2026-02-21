@@ -1,0 +1,18 @@
+'Log files:
+D:\Users\adria\Downloads\zapflow\frontend\.npm-cache\_logs\2026-02-17T18_46_38_658Z-debug-0.log
+
+# npm resolution error report
+
+While resolving: whatsapp-campaign-scheduler@1.0.0
+Found: vite@7.3.1
+node_modules/vite
+  dev vite@"^7.3.1" from the root project
+
+Could not resolve dependency:
+peer vite@"^4.0.0 || ^5.0.0" from @builder.io/vite-plugin-jsx-loc@0.1.1
+node_modules/@builder.io/vite-plugin-jsx-loc
+  dev @builder.io/vite-plugin-jsx-loc@"^0.1.1" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.

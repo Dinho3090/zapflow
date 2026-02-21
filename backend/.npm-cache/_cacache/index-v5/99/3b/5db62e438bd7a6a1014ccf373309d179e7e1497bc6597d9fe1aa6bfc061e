@@ -1,0 +1,2 @@
+
+a45b62f8b515d9a46e6684c4015505cf0eb17803	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@types/ws/-/ws-8.18.1.tgz","integrity":null,"time":1771682054882,"size":"0","metadata":{"time":1771682054882,"url":"http://registry.npmjs.org/@types/ws/-/ws-8.18.1.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:14 GMT","location":"https://registry.npmjs.org/@types/ws/-/ws-8.18.1.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

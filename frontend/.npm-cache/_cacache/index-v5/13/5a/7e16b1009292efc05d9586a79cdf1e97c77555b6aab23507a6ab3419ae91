@@ -1,0 +1,2 @@
+
+13f8eb32dba77ba7d8dd3a4472b09eb95a1e6cfc	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@smithy%2futil-endpoints","integrity":null,"time":1771354165166,"size":"0","metadata":{"time":1771354165166,"url":"http://registry.npmjs.org/@smithy%2futil-endpoints","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:24 GMT","location":"https://registry.npmjs.org/@smithy%2Futil-endpoints","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

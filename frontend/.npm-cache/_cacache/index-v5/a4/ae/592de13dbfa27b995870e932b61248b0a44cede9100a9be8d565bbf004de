@@ -1,0 +1,2 @@
+
+cd65635b02261f5e40b839d80a3e395a589d197f	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@aws-sdk%2fcredential-provider-sso","integrity":null,"time":1771354178984,"size":"0","metadata":{"time":1771354178984,"url":"http://registry.npmjs.org/@aws-sdk%2fcredential-provider-sso","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:38 GMT","location":"https://registry.npmjs.org/@aws-sdk%2Fcredential-provider-sso","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

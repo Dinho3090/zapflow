@@ -1,0 +1,2 @@
+
+cd48304de8926cd89a72a09f3196133e0e108c31	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/inline-style-parser","integrity":null,"time":1771354212477,"size":"0","metadata":{"time":1771354212477,"url":"http://registry.npmjs.org/inline-style-parser","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:12 GMT","location":"https://registry.npmjs.org/inline-style-parser","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

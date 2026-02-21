@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZapFlow Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06080c;--surface:#0c0f14;--surface2:#12161e;--border:#1a2030;--border2:#243040;--accent:#00e5a0;--accent2:#0ea5e9;--warn:#f59e0b;--danger:#ef4444;--text:#e2e8f0;--muted:#64748b;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;}
+.logo{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;display:flex;align-items:center;gap:8px;}
+.logo-icon{width:32px;height:32px;border-radius:8px;background:var(--danger);display:flex;align-items:center;justify-content:center;font-size:15px;}
+.logo span{color:var(--danger);}
+.admin-badge{font-size:10px;padding:3px 8px;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3);color:var(--danger);border-radius:20px;font-family:'JetBrains Mono',monospace;}
+.content{padding:24px;max-width:1400px;margin:0 auto;}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px;}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;}
+.stat-val{font-family:'Syne',sans-serif;font-size:30px;font-weight:800;margin-bottom:4px;}
+.stat-val.g{color:var(--accent);}
+.stat-val.b{color:var(--accent2);}
+.stat-val.w{color:var(--warn);}
+.stat-val.r{color:var(--danger);}
+.stat-label{font-size:11px;color:var(--muted);}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;}
+.card-header{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.card-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;}
+.filters{display:flex;gap:8px;flex-wrap:wrap;}
+.filter-btn{padding:5px 12px;border-radius:20px;border:1px solid var(--border2);background:transparent;color:var(--muted);font-size:12px;cursor:pointer;transition:all .15s;font-family:'Inter',sans-serif;}
+.filter-btn.active{background:var(--accent);color:#000;border-color:var(--accent);}
+.search-input{padding:7px 12px;background:var(--surface2);border:1px solid var(--border2);border-radius:8px;color:var(--text);font-size:13px;outline:none;width:220px;font-family:'Inter',sans-serif;}
+.search-input::placeholder{color:var(--muted);}
+table{width:100%;border-collapse:collapse;}
+th{padding:10px 14px;font-size:11px;font-weight:600;color:var(--muted);text-align:left;border-bottom:1px solid var(--border);background:var(--surface2);font-family:'JetBrains Mono',monospace;letter-spacing:.5px;text-transform:uppercase;white-space:nowrap;}
+td{padding:12px 14px;font-size:13px;border-bottom:1px solid var(--border);}
+tr:hover td{background:var(--surface2);}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:20px;font-size:11px;font-weight:600;font-family:'JetBrains Mono',monospace;}
+.badge.active{background:rgba(0,229,160,.1);color:var(--accent);}
+.badge.suspended{background:rgba(239,68,68,.1);color:var(--danger);}
+.badge.trial{background:rgba(14,165,233,.1);color:var(--accent2);}
+.badge.cancelled{background:rgba(100,116,139,.1);color:var(--muted);}
+.wa-badge{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-family:'JetBrains Mono',monospace;}
+.wa-dot{width:6px;height:6px;border-radius:50%;}
+.wa-dot.connected{background:var(--accent);}
+.wa-dot.disconnected{background:var(--muted);}
+.wa-dot.connecting{background:var(--warn);}
+.plan-badge{font-size:11px;font-weight:600;font-family:'JetBrains Mono',monospace;color:var(--warn);}
+.usage-mini{display:flex;align-items:center;gap:8px;}
+.usage-bar-mini{width:80px;height:4px;background:var(--border2);border-radius:2px;overflow:hidden;}
+.usage-fill-mini{height:100%;border-radius:2px;}
+.usage-fill-mini.ok{background:var(--accent);}
+.usage-fill-mini.warn{background:var(--warn);}
+.usage-fill-mini.crit{background:var(--danger);}
+.usage-pct{font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--muted);}
+.actions{display:flex;gap:6px;}
+.btn{padding:6px 12px;border-radius:7px;border:none;font-size:12px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:all .15s;display:inline-flex;align-items:center;gap:5px;}
+.btn-sm{padding:5px 10px;font-size:11px;}
+.btn-green{background:rgba(0,229,160,.1);color:var(--accent);border:1px solid rgba(0,229,160,.25);}
+.btn-green:hover{background:rgba(0,229,160,.2);}
+.btn-red{background:rgba(239,68,68,.1);color:var(--danger);border:1px solid rgba(239,68,68,.25);}
+.btn-red:hover{background:rgba(239,68,68,.2);}
+.btn-blue{background:rgba(14,165,233,.1);color:var(--accent2);border:1px solid rgba(14,165,233,.25);}
+.btn-blue:hover{background:rgba(14,165,233,.2);}
+.btn-primary{background:var(--accent);color:#000;}
+.btn-primary:hover{background:#00ffb3;}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:500;align-items:center;justify-content:center;padding:16px;}
+.modal-overlay.open{display:flex;}
+.modal{background:var(--surface);border:1px solid var(--border);border-radius:14px;width:100%;max-width:440px;animation:su .2s ease;}
+@keyframes su{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.modal-header{padding:18px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;}
+.modal-title{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;}
+.modal-body{padding:20px;}
+.modal-footer{padding:14px 20px;border-top:1px solid var(--border);display:flex;justify-content:flex-end;gap:8px;}
+.form-group{margin-bottom:14px;}
+.form-label{font-size:12px;font-weight:500;color:var(--muted);margin-bottom:6px;display:block;}
+.form-input,.form-select,.form-textarea{width:100%;padding:9px 12px;background:var(--surface2);border:1px solid var(--border2);border-radius:8px;color:var(--text);font-size:13px;font-family:'Inter',sans-serif;outline:none;}
+.form-input:focus,.form-select:focus{border-color:var(--accent);}
+.info-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;}
+.info-label{color:var(--muted);}
+.tenant-name{font-weight:600;margin-bottom:4px;}
+.tenant-email{font-size:11px;color:var(--muted);font-family:'JetBrains Mono',monospace;}
+@media(max-width:900px){.stats-grid{grid-template-columns:repeat(2,1fr);}table{font-size:12px;}th,td{padding:9px 10px;}.search-input{width:160px;}.actions{flex-direction:column;gap:3px;}}
+@media(max-width:600px){.stats-grid{grid-template-columns:1fr 1fr;}.usage-bar-mini{display:none;}.filters{display:none;}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">
+    <div class="logo-icon">🔑</div>
+    ZapFlow<span>Admin</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px">
+    <span class="admin-badge">ADMIN</span>
+    <div style="font-size:12px;color:var(--muted);font-family:'JetBrains Mono',monospace">admin@zapflow.com</div>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- STATS -->
+  <div class="stats-grid">
+    <div class="stat"><div class="stat-val g">47</div><div class="stat-label">Clientes ativos</div></div>
+    <div class="stat"><div class="stat-val w">5</div><div class="stat-label">Em trial</div></div>
+    <div class="stat"><div class="stat-val r">3</div><div class="stat-label">Suspensos</div></div>
+    <div class="stat"><div class="stat-val b">284k</div><div class="stat-label">Msgs enviadas/mês</div></div>
+  </div>
+
+  <!-- TABELA DE CLIENTES -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">Clientes</div>
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+        <div class="filters">
+          <button class="filter-btn active" onclick="setFilter(this,'all')">Todos</button>
+          <button class="filter-btn" onclick="setFilter(this,'active')">Ativos</button>
+          <button class="filter-btn" onclick="setFilter(this,'trial')">Trial</button>
+          <button class="filter-btn" onclick="setFilter(this,'suspended')">Suspensos</button>
+        </div>
+        <input class="search-input" placeholder="🔍 Buscar cliente..." oninput="filterTable(this.value)">
+      </div>
+    </div>
+    <div style="overflow-x:auto">
+      <table id="clientTable">
+        <thead>
+          <tr>
+            <th>Cliente</th>
+            <th>Plano</th>
+            <th>Status</th>
+            <th>WhatsApp</th>
+            <th>Uso mensal</th>
+            <th>Vencimento</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="clientBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: DETALHES/AÇÕES -->
+<div class="modal-overlay" id="modal-tenant">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="modalTenantName">Cliente</div>
+      <button class="btn btn-sm" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:18px" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <div id="tenantInfo"></div>
+      <div id="tenantActions" style="margin-top:16px;display:flex;flex-direction:column;gap:8px"></div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: BLOQUEAR -->
+<div class="modal-overlay" id="modal-block">
+  <div class="modal">
+    <div class="modal-header"><div class="modal-title">🔒 Suspender Cliente</div><button class="btn" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:18px" onclick="document.getElementById('modal-block').classList.remove('open')">✕</button></div>
+    <div class="modal-body">
+      <p style="font-size:13px;color:var(--muted);margin-bottom:16px">O cliente será suspenso imediatamente. Todas as campanhas ativas serão pausadas e o WhatsApp será desconectado.</p>
+      <div class="form-group"><label class="form-label">Motivo da suspensão</label>
+        <select class="form-select" id="blockReason">
+          <option>Inadimplência — pagamento em atraso</option>
+          <option>Violação dos termos de uso</option>
+          <option>Uso excessivo / spam detectado</option>
+          <option>Solicitação do cliente</option>
+          <option>Outro</option>
+        </select>
+      </div>
+      <div class="form-group"><label class="form-label">Observação interna</label><input class="form-input" id="blockNote" placeholder="Detalhes adicionais..."></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" style="background:var(--surface2);color:var(--muted);border:1px solid var(--border2)" onclick="document.getElementById('modal-block').classList.remove('open')">Cancelar</button>
+      <button class="btn btn-red" onclick="confirmBlock()">🔒 Suspender Agora</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: REATIVAR -->
+<div class="modal-overlay" id="modal-unblock">
+  <div class="modal">
+    <div class="modal-header"><div class="modal-title">✅ Reativar Cliente</div><button class="btn" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:18px" onclick="document.getElementById('modal-unblock').classList.remove('open')">✕</button></div>
+    <div class="modal-body">
+      <div class="form-group"><label class="form-label">Plano</label>
+        <select class="form-select" id="unblockPlan">
+          <option value="trial">Trial (500 msgs)</option>
+          <option value="basic">Basic (1.000 msgs)</option>
+          <option value="pro" selected>Pro (10.000 msgs)</option>
+          <option value="enterprise">Enterprise (ilimitado)</option>
+        </select>
+      </div>
+      <div class="form-group"><label class="form-label">Validade (dias a partir de hoje)</label><input class="form-input" type="number" id="unblockDays" value="30" min="1"></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" style="background:var(--surface2);color:var(--muted);border:1px solid var(--border2)" onclick="document.getElementById('modal-unblock').classList.remove('open')">Cancelar</button>
+      <button class="btn btn-green" onclick="confirmUnblock()">✅ Reativar Agora</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const clients = [
+  {id:'1',name:'João Silva',email:'joao@empresa.com',plan:'pro',status:'active',wa:'connected',waPhone:'11 98765-4321',msgSent:7234,msgLimit:10000,expires:'2025-03-01'},
+  {id:'2',name:'Maria Santos',email:'maria@loja.com.br',plan:'basic',status:'active',wa:'connected',waPhone:'21 91234-5678',msgSent:820,msgLimit:1000,expires:'2025-02-28'},
+  {id:'3',name:'Pedro Costa',email:'pedro@negocio.com',plan:'trial',status:'trial',wa:'disconnected',waPhone:null,msgSent:120,msgLimit:500,expires:'2025-02-20'},
+  {id:'4',name:'Ana Oliveira',email:'ana@comercio.com',plan:'pro',status:'suspended',wa:'disconnected',waPhone:'31 99876-5432',msgSent:0,msgLimit:10000,expires:'2025-01-15'},
+  {id:'5',name:'Carlos Ferreira',email:'carlos@agencia.com',plan:'enterprise',status:'active',wa:'connected',waPhone:'41 97654-3210',msgSent:45200,msgLimit:99999,expires:'2025-12-31'},
+  {id:'6',name:'Lucia Mendes',email:'lucia@boutique.com',plan:'basic',status:'suspended',wa:'disconnected',waPhone:null,msgSent:0,msgLimit:1000,expires:'2025-01-31'},
+  {id:'7',name:'Roberto Lima',email:'roberto@auto.com',plan:'pro',status:'active',wa:'connecting',waPhone:null,msgSent:3100,msgLimit:10000,expires:'2025-03-15'},
+  {id:'8',name:'Fernanda Rocha',email:'fern@market.com',plan:'trial',status:'trial',wa:'connected',waPhone:'85 98888-0001',msgSent:80,msgLimit:500,expires:'2025-02-22'},
+];
+
+let currentFilter = 'all';
+let selectedTenantId = null;
+
+function renderTable(data) {
+  const tbody = document.getElementById('clientBody');
+  tbody.innerHTML = '';
+  (data || clients).forEach(c => {
+    const pct = Math.round(c.msgSent / c.msgLimit * 100);
+    const fillClass = pct >= 90 ? 'crit' : pct >= 70 ? 'warn' : 'ok';
+    const exp = new Date(c.expires);
+    const daysLeft = Math.ceil((exp - new Date()) / 86400000);
+    const expClass = daysLeft < 0 ? 'color:var(--danger)' : daysLeft < 7 ? 'color:var(--warn)' : 'color:var(--muted)';
+
+    tbody.innerHTML += `
+      <tr>
+        <td><div class="tenant-name">${c.name}</div><div class="tenant-email">${c.email}</div></td>
+        <td><span class="plan-badge">${c.plan.toUpperCase()}</span></td>
+        <td><span class="badge ${c.status}">${statusLabel(c.status)}</span></td>
+        <td>
+          <div class="wa-badge">
+            <div class="wa-dot ${c.wa}"></div>
+            <span style="font-size:11px;color:var(--muted)">${c.waPhone || c.wa}</span>
+          </div>
+        </td>
+        <td>
+          <div class="usage-mini">
+            <div class="usage-bar-mini"><div class="usage-fill-mini ${fillClass}" style="width:${pct}%"></div></div>
+            <span class="usage-pct">${pct}%</span>
+          </div>
+          <div style="font-size:10px;color:var(--muted);margin-top:2px;font-family:'JetBrains Mono',monospace">${c.msgSent.toLocaleString('pt-BR')} / ${c.msgLimit.toLocaleString('pt-BR')}</div>
+        </td>
+        <td><span style="font-size:12px;font-family:'JetBrains Mono',monospace;${expClass}">${daysLeft > 0 ? `${daysLeft}d` : 'VENCIDO'}</span></td>
+        <td>
+          <div class="actions">
+            <button class="btn btn-blue btn-sm" onclick="viewTenant('${c.id}')">👁 Ver</button>
+            ${c.status === 'suspended' || c.status === 'cancelled'
+              ? `<button class="btn btn-green btn-sm" onclick="openUnblock('${c.id}')">✅ Reativar</button>`
+              : `<button class="btn btn-red btn-sm" onclick="openBlock('${c.id}')">🔒 Suspender</button>`}
+          </div>
+        </td>
+      </tr>`;
+  });
+}
+
+function statusLabel(s){return{active:'✅ Ativo',suspended:'🔒 Suspenso',trial:'🕐 Trial',cancelled:'❌ Cancelado'}[s]||s;}
+
+function setFilter(btn, f) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentFilter = f;
+  applyFilters();
+}
+
+function filterTable(q) { applyFilters(q); }
+
+function applyFilters(q = '') {
+  const filtered = clients.filter(c => {
+    const matchStatus = currentFilter === 'all' || c.status === currentFilter;
+    const matchSearch = !q || c.name.toLowerCase().includes(q.toLowerCase()) || c.email.toLowerCase().includes(q.toLowerCase());
+    return matchStatus && matchSearch;
+  });
+  renderTable(filtered);
+}
+
+function viewTenant(id) {
+  const c = clients.find(x => x.id === id);
+  if (!c) return;
+  selectedTenantId = id;
+  document.getElementById('modalTenantName').textContent = c.name;
+  const pct = Math.round(c.msgSent / c.msgLimit * 100);
+  const daysLeft = Math.ceil((new Date(c.expires) - new Date()) / 86400000);
+  document.getElementById('tenantInfo').innerHTML = `
+    <div class="info-row"><span class="info-label">Email</span><span style="font-family:'JetBrains Mono',monospace;font-size:12px">${c.email}</span></div>
+    <div class="info-row"><span class="info-label">Plano</span><span class="plan-badge">${c.plan.toUpperCase()}</span></div>
+    <div class="info-row"><span class="info-label">Status</span><span class="badge ${c.status}">${statusLabel(c.status)}</span></div>
+    <div class="info-row"><span class="info-label">WhatsApp</span><span style="font-size:12px">${c.waPhone || '—'} (${c.wa})</span></div>
+    <div class="info-row"><span class="info-label">Msgs enviadas</span><span style="font-family:'JetBrains Mono',monospace;font-size:12px">${c.msgSent.toLocaleString('pt-BR')} / ${c.msgLimit.toLocaleString('pt-BR')} (${pct}%)</span></div>
+    <div class="info-row"><span class="info-label">Vencimento</span><span style="font-size:12px;${daysLeft<0?'color:var(--danger)':''}">${c.expires} (${daysLeft > 0 ? daysLeft + ' dias' : 'VENCIDO'})</span></div>
+  `;
+  document.getElementById('tenantActions').innerHTML = c.status === 'suspended'
+    ? `<button class="btn btn-green" onclick="openUnblock('${id}');closeModal()">✅ Reativar Cliente</button>`
+    : `<button class="btn btn-red" onclick="openBlock('${id}');closeModal()">🔒 Suspender Cliente</button>`;
+  document.getElementById('modal-tenant').classList.add('open');
+}
+
+function closeModal() { document.getElementById('modal-tenant').classList.remove('open'); }
+function openBlock(id) { selectedTenantId = id; document.getElementById('modal-block').classList.add('open'); }
+function openUnblock(id) { selectedTenantId = id; document.getElementById('modal-unblock').classList.add('open'); }
+
+function confirmBlock() {
+  const c = clients.find(x => x.id === selectedTenantId);
+  if (c) { c.status = 'suspended'; c.wa = 'disconnected'; }
+  document.getElementById('modal-block').classList.remove('open');
+  applyFilters();
+  alert(`✅ Cliente suspenso!\n\nMotivo: ${document.getElementById('blockReason').value}`);
+}
+
+function confirmUnblock() {
+  const c = clients.find(x => x.id === selectedTenantId);
+  const days = parseInt(document.getElementById('unblockDays').value) || 30;
+  if (c) {
+    c.status = 'active';
+    c.plan = document.getElementById('unblockPlan').value;
+    const exp = new Date(); exp.setDate(exp.getDate() + days);
+    c.expires = exp.toISOString().slice(0,10);
+  }
+  document.getElementById('modal-unblock').classList.remove('open');
+  applyFilters();
+  alert(`✅ Cliente reativado por ${days} dias no plano ${document.getElementById('unblockPlan').value.toUpperCase()}!`);
+}
+
+document.querySelectorAll('.modal-overlay').forEach(el =>
+  el.addEventListener('click', e => { if(e.target===el) el.classList.remove('open'); }));
+
+renderTable();
+</script>
+</body>
+</html>

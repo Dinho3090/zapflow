@@ -1,0 +1,2 @@
+
+cda52219e7eae584553c364da8064414a2adf11d	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@floating-ui%2futils","integrity":null,"time":1771354188623,"size":"0","metadata":{"time":1771354188623,"url":"http://registry.npmjs.org/@floating-ui%2futils","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:48 GMT","location":"https://registry.npmjs.org/@floating-ui%2Futils","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

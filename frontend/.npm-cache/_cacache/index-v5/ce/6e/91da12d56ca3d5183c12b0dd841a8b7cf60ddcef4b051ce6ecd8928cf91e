@@ -1,0 +1,2 @@
+
+85941d864a27b179f6a627968b53ae0712468950	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/gel","integrity":null,"time":1771354060972,"size":"0","metadata":{"time":1771354060972,"url":"http://registry.npmjs.org/gel","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:47:40 GMT","location":"https://registry.npmjs.org/gel","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

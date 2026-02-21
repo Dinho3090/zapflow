@@ -1,0 +1,2 @@
+
+114dc6a10d71d999525823e8c2069b6dbcd0a942	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/modern-screenshot","integrity":null,"time":1771354176521,"size":"0","metadata":{"time":1771354176521,"url":"http://registry.npmjs.org/modern-screenshot","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:36 GMT","location":"https://registry.npmjs.org/modern-screenshot","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

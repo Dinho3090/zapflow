@@ -1,0 +1,2 @@
+
+7778f3c6a01af1dd56143e7c299e4803a7378a11	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/lodash.isarguments","integrity":null,"time":1771682047345,"size":"0","metadata":{"time":1771682047345,"url":"http://registry.npmjs.org/lodash.isarguments","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:07 GMT","location":"https://registry.npmjs.org/lodash.isarguments","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

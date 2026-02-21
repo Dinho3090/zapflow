@@ -1,0 +1,2 @@
+
+777e66af66104d8bc60ac10bd4497618c19b4f9c	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/luxon","integrity":null,"time":1771682048738,"size":"0","metadata":{"time":1771682048738,"url":"http://registry.npmjs.org/luxon","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:08 GMT","location":"https://registry.npmjs.org/luxon","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

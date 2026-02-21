@@ -1,0 +1,2 @@
+
+155f1e18f49e69c19c2708e7ffd35a447850a62e	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/cron-parser","integrity":null,"time":1771682045963,"size":"0","metadata":{"time":1771682045963,"url":"http://registry.npmjs.org/cron-parser","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:05 GMT","location":"https://registry.npmjs.org/cron-parser","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,73 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.6.2
+2 info using node@v24.13.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:D:\Users\adria\Downloads\.npmrc
+5 silly config load:file:C:\Users\adria\.npmrc
+6 silly config load:file:D:\Users\adria\Downloads\zapflow-main\zapflow-main\etc\npmrc
+7 verbose title npm exec create-next-app@latest admin --app --no-tailwind --no-eslint --no-src-dir
+8 verbose argv "exec" "--" "create-next-app@latest" "admin" "--app" "--no-tailwind" "--no-eslint" "--no-src-dir"
+9 verbose logfile logs-max:10 dir:D:\Users\adria\Downloads\zapflow-main\zapflow-main\.npm-cache\_logs\2026-02-21T17_49_34_969Z-
+10 verbose logfile D:\Users\adria\Downloads\zapflow-main\zapflow-main\.npm-cache\_logs\2026-02-21T17_49_34_969Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 http fetch GET 200 https://registry.npmjs.org/npm 415ms
+14 http fetch GET 200 https://registry.npmjs.org/create-next-app 607ms (cache miss)
+15 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+16 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+17 silly idealTree buildDeps
+18 silly fetch manifest create-next-app@16.1.6
+19 silly packumentCache full:http://registry.npmjs.org/create-next-app cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/create-next-app 804ms (cache miss)
+21 silly packumentCache full:http://registry.npmjs.org/create-next-app set size:undefined disposed:false
+22 silly placeDep ROOT create-next-app@16.1.6 OK for:  want: 16.1.6
+23 silly reify moves {}
+24 silly audit bulk request { 'create-next-app': [ '16.1.6' ] }
+25 http cache create-next-app@http://registry.npmjs.org/create-next-app/-/create-next-app-16.1.6.tgz 0ms (cache hit)
+26 silly tarball no local data for create-next-app@http://registry.npmjs.org/create-next-app/-/create-next-app-16.1.6.tgz. Extracting by manifest.
+27 notice Beginning October 4, 2021, all connections to the npm registry - including for package installation - must use TLS 1.2 or higher. You are currently using plaintext http to connect. Please visit the GitHub blog for more information: https://github.blog/2021-08-23-npm-registry-deprecating-tls-1-0-tls-1-1/
+28 http fetch POST 426 http://registry.npmjs.org/-/npm/v1/security/advisories/bulk 53ms
+29 verbose audit error HttpErrorGeneral: 426 Upgrade Required - POST http://registry.npmjs.org/-/npm/v1/security/advisories/bulk
+29 verbose audit error     at C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-fetch\lib\check-response.js:103:15
+29 verbose audit error     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+29 verbose audit error     at async #getReport (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:275:19)
+29 verbose audit error     at async AuditReport.run (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:100:19) {
+29 verbose audit error   headers: [Object: null prototype] {
+29 verbose audit error     date: [ 'Sat, 21 Feb 2026 17:49:38 GMT' ],
+29 verbose audit error     'content-type': [ 'text/plain' ],
+29 verbose audit error     'content-length': [ '271' ],
+29 verbose audit error     connection: [ 'keep-alive' ],
+29 verbose audit error     'cf-ray': [ '9d1814db6c9446cf-POA' ],
+29 verbose audit error     'npm-notice': [
+29 verbose audit error       'Beginning October 4, 2021, all connections to the npm registry - including for package installation - must use TLS 1.2 or higher. You are currently using plaintext http to connect. Please visit the GitHub blog for more information: https://github.blog/2021-08-23-npm-registry-deprecating-tls-1-0-tls-1-1/'
+29 verbose audit error     ],
+29 verbose audit error     vary: [ 'Accept-Encoding' ],
+29 verbose audit error     'set-cookie': [
+29 verbose audit error       '_cfuvid=8H38XBMjBMFROWo3D_2uX7NoIYMea.LV.naWCC6TDP4-1771696178497-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly'
+29 verbose audit error     ],
+29 verbose audit error     server: [ 'cloudflare' ],
+29 verbose audit error     'x-fetch-attempts': [ '1' ]
+29 verbose audit error   },
+29 verbose audit error   statusCode: 426,
+29 verbose audit error   code: 'E426',
+29 verbose audit error   method: 'POST',
+29 verbose audit error   uri: 'http://registry.npmjs.org/-/npm/v1/security/advisories/bulk',
+29 verbose audit error   body: <Buffer 42 65 67 69 6e 6e 69 6e 67 20 4f 63 74 6f 62 65 72 20 34 2c 20 32 30 32 31 2c 20 61 6c 6c 20 63 6f 6e 6e 65 63 74 69 6f 6e 73 20 74 6f 20 6e 70 6d 20 ... 221 more bytes>,
+29 verbose audit error   pkgid: undefined
+29 verbose audit error }
+30 silly audit error Beginning October 4, 2021, all connections to npm websites and the npm registry - including for package installation - must use HTTPS and TLS 1.2 or higher.
+30 silly audit error
+30 silly audit error For more information see this blog post: https://github.blog/2021-08-23-npm-registry-deprecating-tls-1-0-tls-1-1/
+31 silly audit report null
+32 http fetch GET 200 https://registry.npmjs.org/create-next-app/-/create-next-app-16.1.6.tgz 571ms (cache miss)
+33 verbose cwd D:\Users\adria\Downloads\zapflow-main\zapflow-main
+34 verbose os Windows_NT 10.0.26200
+35 verbose node v24.13.0
+36 verbose npm  v11.6.2
+37 notice
+37 notice New [33mminor[39m version of npm available! [33m11.6.2[39m -> [34m11.10.1[39m
+37 notice Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.10.1[39m
+37 notice To update run: [4mnpm install -g npm@11.10.1[24m
+37 notice  { force: true, Symbol(proc-log.meta): true }
+38 verbose exit 1
+39 verbose code 1

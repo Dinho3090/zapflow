@@ -1,0 +1,38 @@
+# ─────────────────────────────────────────────────────────
+# ZapFlow Admin — Dockerfile
+# Next.js · Build de produção do painel admin
+# ─────────────────────────────────────────────────────────
+FROM node:20-alpine AS base
+WORKDIR /app
+RUN apk add --no-cache libc6-compat
+
+FROM base AS deps
+COPY package*.json ./
+RUN npm ci
+
+FROM base AS builder
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
+
+ARG NEXT_PUBLIC_API_URL
+ARG ADMIN_KEY
+ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
+ENV ADMIN_KEY=$ADMIN_KEY
+
+RUN npm run build
+
+FROM base AS runner
+ENV NODE_ENV=production
+
+RUN addgroup -g 1001 -S zapflow && \
+    adduser  -u 1001 -S zapflow -G zapflow
+
+COPY --from=builder --chown=zapflow:zapflow /app/.next/standalone ./
+COPY --from=builder --chown=zapflow:zapflow /app/.next/static ./.next/static
+COPY --from=builder --chown=zapflow:zapflow /app/public ./public
+
+USER zapflow
+EXPOSE 3002
+ENV PORT=3002 HOSTNAME=0.0.0.0
+
+CMD ["node", "server.js"]

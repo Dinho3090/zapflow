@@ -1,0 +1,2 @@
+
+583b72a0a932bb422e984cd1ceeecc67461b4778	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/mnemonist","integrity":null,"time":1771682045686,"size":"0","metadata":{"time":1771682045686,"url":"http://registry.npmjs.org/mnemonist","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:05 GMT","location":"https://registry.npmjs.org/mnemonist","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

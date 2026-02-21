@@ -1,0 +1,2 @@
+
+951257d14fe651f05508e975d4203090b497fad1	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz","integrity":null,"time":1771682054830,"size":"0","metadata":{"time":1771682054829,"url":"http://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:14 GMT","location":"https://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

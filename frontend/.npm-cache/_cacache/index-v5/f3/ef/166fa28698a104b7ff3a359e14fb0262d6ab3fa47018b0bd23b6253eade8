@@ -1,0 +1,2 @@
+
+741d3801716721c4041fc793c4eab18ba6d2b857	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@smithy%2fcredential-provider-imds","integrity":null,"time":1771354179187,"size":"0","metadata":{"time":1771354179187,"url":"http://registry.npmjs.org/@smithy%2fcredential-provider-imds","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:38 GMT","location":"https://registry.npmjs.org/@smithy%2Fcredential-provider-imds","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

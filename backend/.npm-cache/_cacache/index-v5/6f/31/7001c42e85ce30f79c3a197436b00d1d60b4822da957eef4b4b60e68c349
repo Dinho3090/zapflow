@@ -1,0 +1,2 @@
+
+d4f2b85f4a3fb7f134b01fc79d715ab55aac7987	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@pinojs%2fredact","integrity":null,"time":1771682049687,"size":"0","metadata":{"time":1771682049687,"url":"http://registry.npmjs.org/@pinojs%2fredact","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:09 GMT","location":"https://registry.npmjs.org/@pinojs%2Fredact","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

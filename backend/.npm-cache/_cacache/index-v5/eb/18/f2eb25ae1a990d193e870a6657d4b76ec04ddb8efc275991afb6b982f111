@@ -1,0 +1,2 @@
+
+8658194adb577a218f259f1fa05f2a9ac8050284	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/buffer","integrity":null,"time":1771682053006,"size":"0","metadata":{"time":1771682053006,"url":"http://registry.npmjs.org/buffer","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:12 GMT","location":"https://registry.npmjs.org/buffer","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+00ac32466d2250963100f5c36fbe2666d3cced3e	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@vitest/mocker/-/mocker-4.0.18.tgz","integrity":null,"time":1771354218542,"size":"0","metadata":{"time":1771354218542,"url":"http://registry.npmjs.org/@vitest/mocker/-/mocker-4.0.18.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:18 GMT","location":"https://registry.npmjs.org/@vitest/mocker/-/mocker-4.0.18.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

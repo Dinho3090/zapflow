@@ -1,0 +1,2 @@
+
+13d6b76646e83270c1abed8050b1049feb40cacc	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@aws-sdk%2fxml-builder","integrity":null,"time":1771354178491,"size":"0","metadata":{"time":1771354178491,"url":"http://registry.npmjs.org/@aws-sdk%2fxml-builder","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:38 GMT","location":"https://registry.npmjs.org/@aws-sdk%2Fxml-builder","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

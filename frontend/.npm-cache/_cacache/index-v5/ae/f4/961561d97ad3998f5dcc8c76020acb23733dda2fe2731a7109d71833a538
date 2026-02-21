@@ -1,0 +1,2 @@
+
+0fe1cf1e287230b89cc7311a1a676f1872462ee9	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/mitt","integrity":null,"time":1771354177238,"size":"0","metadata":{"time":1771354177238,"url":"http://registry.npmjs.org/mitt","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:36 GMT","location":"https://registry.npmjs.org/mitt","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

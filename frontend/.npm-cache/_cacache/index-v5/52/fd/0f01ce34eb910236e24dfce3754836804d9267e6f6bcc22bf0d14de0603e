@@ -1,0 +1,2 @@
+
+47d4d534039355b7c050f4a1953260eaded56f73	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@aws-sdk%2futil-user-agent-browser","integrity":null,"time":1771354161607,"size":"0","metadata":{"time":1771354161607,"url":"http://registry.npmjs.org/@aws-sdk%2futil-user-agent-browser","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:21 GMT","location":"https://registry.npmjs.org/@aws-sdk%2Futil-user-agent-browser","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

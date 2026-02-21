@@ -1,0 +1,2 @@
+
+92d1262d31f21250c1d934a527f24717eb0ac3bc	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/abstract-logging","integrity":null,"time":1771682046661,"size":"0","metadata":{"time":1771682046661,"url":"http://registry.npmjs.org/abstract-logging","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:06 GMT","location":"https://registry.npmjs.org/abstract-logging","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

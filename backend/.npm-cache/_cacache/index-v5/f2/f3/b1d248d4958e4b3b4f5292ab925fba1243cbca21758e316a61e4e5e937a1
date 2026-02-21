@@ -1,0 +1,2 @@
+
+79fe479f4b67f6d54120d8416d7f5bb1c267b317	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/bullmq","integrity":null,"time":1771682043707,"size":"0","metadata":{"time":1771682043707,"url":"http://registry.npmjs.org/bullmq","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:03 GMT","location":"https://registry.npmjs.org/bullmq","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+636e79d55c3e1671488ae7227e3d927bb7697180	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/is-hexadecimal","integrity":null,"time":1771354207762,"size":"0","metadata":{"time":1771354207762,"url":"http://registry.npmjs.org/is-hexadecimal","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:07 GMT","location":"https://registry.npmjs.org/is-hexadecimal","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

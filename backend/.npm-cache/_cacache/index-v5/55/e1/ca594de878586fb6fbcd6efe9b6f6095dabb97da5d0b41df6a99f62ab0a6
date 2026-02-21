@@ -1,0 +1,2 @@
+
+55acc23de35f69d363a6afa9352652e570aa8dfe	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@fastify%2fcors","integrity":null,"time":1771682041938,"size":"0","metadata":{"time":1771682041938,"url":"http://registry.npmjs.org/@fastify%2fcors","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:01 GMT","location":"https://registry.npmjs.org/@fastify%2Fcors","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

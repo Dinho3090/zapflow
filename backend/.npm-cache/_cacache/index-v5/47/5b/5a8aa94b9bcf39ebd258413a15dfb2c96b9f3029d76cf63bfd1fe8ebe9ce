@@ -1,0 +1,2 @@
+
+287c9579fdd1febc80867695226aacd9b7b9afb4	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/safe-regex2","integrity":null,"time":1771682049358,"size":"0","metadata":{"time":1771682049358,"url":"http://registry.npmjs.org/safe-regex2","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:09 GMT","location":"https://registry.npmjs.org/safe-regex2","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

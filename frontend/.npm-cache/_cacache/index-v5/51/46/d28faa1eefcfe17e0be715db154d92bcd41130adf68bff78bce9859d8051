@@ -1,0 +1,2 @@
+
+f5aa52e92727354bc86b6c0899d32f646134cd6e	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/knex","integrity":null,"time":1771354061372,"size":"0","metadata":{"time":1771354061372,"url":"http://registry.npmjs.org/knex","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:47:41 GMT","location":"https://registry.npmjs.org/knex","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

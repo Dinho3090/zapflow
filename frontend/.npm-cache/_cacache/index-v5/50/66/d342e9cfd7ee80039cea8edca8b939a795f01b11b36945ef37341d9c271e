@@ -1,0 +1,2 @@
+
+540aeaf8a4fd2f929641b724e5bb920aa7a58500	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/lru-cache","integrity":null,"time":1771354195248,"size":"0","metadata":{"time":1771354195248,"url":"http://registry.npmjs.org/lru-cache","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:54 GMT","location":"https://registry.npmjs.org/lru-cache","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

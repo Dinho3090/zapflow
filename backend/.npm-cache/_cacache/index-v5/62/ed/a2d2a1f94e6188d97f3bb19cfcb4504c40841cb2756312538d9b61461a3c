@@ -1,0 +1,2 @@
+
+60b94146bf797481ada1617156bf22b10dd7afc8	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/msgpackr","integrity":null,"time":1771682046022,"size":"0","metadata":{"time":1771682046022,"url":"http://registry.npmjs.org/msgpackr","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:05 GMT","location":"https://registry.npmjs.org/msgpackr","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

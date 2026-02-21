@@ -1,0 +1,2 @@
+
+e462240f8b8c96fb0803ae2df8d5c36d2ed96fb3	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/safe-stable-stringify","integrity":null,"time":1771682049748,"size":"0","metadata":{"time":1771682049748,"url":"http://registry.npmjs.org/safe-stable-stringify","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:09 GMT","location":"https://registry.npmjs.org/safe-stable-stringify","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

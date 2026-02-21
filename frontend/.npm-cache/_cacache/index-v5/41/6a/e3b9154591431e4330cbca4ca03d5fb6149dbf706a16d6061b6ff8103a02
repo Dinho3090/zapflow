@@ -1,0 +1,2 @@
+
+64e0afde2455ba1d7c7c6dddf9a0d90434ce14a9	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@types%2fd3-path","integrity":null,"time":1771354213197,"size":"0","metadata":{"time":1771354213197,"url":"http://registry.npmjs.org/@types%2fd3-path","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:12 GMT","location":"https://registry.npmjs.org/@types%2Fd3-path","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+11b8f07668f2dd32c298b1e662979f7083177e8f	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@aws-crypto/crc32c/-/crc32c-5.2.0.tgz","integrity":null,"time":1771354220265,"size":"0","metadata":{"time":1771354220265,"url":"http://registry.npmjs.org/@aws-crypto/crc32c/-/crc32c-5.2.0.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:19 GMT","location":"https://registry.npmjs.org/@aws-crypto/crc32c/-/crc32c-5.2.0.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

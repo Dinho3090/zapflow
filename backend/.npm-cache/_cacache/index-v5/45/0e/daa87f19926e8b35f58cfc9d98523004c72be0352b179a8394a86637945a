@@ -1,0 +1,2 @@
+
+b13daea33388b22586d527d53f52943dc36ee395	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/uuid/-/uuid-11.1.0.tgz","integrity":null,"time":1771682054942,"size":"0","metadata":{"time":1771682054942,"url":"http://registry.npmjs.org/uuid/-/uuid-11.1.0.tgz","reqHeaders":{},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sat, 21 Feb 2026 13:54:14 GMT","location":"https://registry.npmjs.org/uuid/-/uuid-11.1.0.tgz","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

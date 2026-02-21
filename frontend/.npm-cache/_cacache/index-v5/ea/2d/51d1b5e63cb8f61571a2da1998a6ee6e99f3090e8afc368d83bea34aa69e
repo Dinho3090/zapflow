@@ -1,0 +1,2 @@
+
+168d1444e85c9ec2474f42118067d61aba67b139	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@smithy%2fmiddleware-endpoint","integrity":null,"time":1771354163172,"size":"0","metadata":{"time":1771354163171,"url":"http://registry.npmjs.org/@smithy%2fmiddleware-endpoint","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:49:22 GMT","location":"https://registry.npmjs.org/@smithy%2Fmiddleware-endpoint","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

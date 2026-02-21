@@ -1,0 +1,114 @@
+version: '3.8'
+
+services:
+
+  # Evolution API v2
+  evolution:
+    image: atendai/evolution-api:v2.1.1
+    container_name: evolution_local
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      # Server
+      SERVER_URL: http://localhost:8080
+      SERVER_PORT: 8080
+      
+      # Auth
+      AUTHENTICATION_API_KEY: ${EVOLUTION_API_KEY}
+      
+      # Database
+      DATABASE_ENABLED: true
+      DATABASE_PROVIDER: postgresql
+      DATABASE_CONNECTION_URI: postgresql://${EVOL_DB_USER}:${EVOL_DB_PASS}@postgres_evolution:5432/evolution
+      
+      # Cache
+      CACHE_REDIS_ENABLED: true
+      CACHE_REDIS_URI: redis://redis_local:6379
+      CACHE_REDIS_PREFIX_KEY: evolution
+      CACHE_REDIS_SAVE_INSTANCES: true
+      
+      # Webhook Global
+      WEBHOOK_GLOBAL_ENABLED: true
+      WEBHOOK_GLOBAL_URL: http://host.docker.internal:3001/webhook/evolution
+      WEBHOOK_GLOBAL_WEBHOOK_BY_EVENTS: true
+      
+      # Webhook Events
+      WEBHOOK_EVENTS_MESSAGES_UPSERT: true
+      WEBHOOK_EVENTS_MESSAGES_UPDATE: true
+      WEBHOOK_EVENTS_CONNECTION_UPDATE: true
+      WEBHOOK_EVENTS_SEND_MESSAGE: true
+      
+      # Config
+      CONFIG_SESSION_PHONE_CLIENT: ZapFlow
+      CONFIG_SESSION_PHONE_NAME: Chrome
+      
+      # Logs
+      LOG_LEVEL: ERROR,WARN,DEBUG,INFO
+      LOG_COLOR: true
+      
+      # Storage
+      STORE_MESSAGES: true
+      STORE_MESSAGE_UP: true
+      STORE_CONTACTS: true
+      STORE_CHATS: true
+      
+      # Cleanup
+      CLEAN_STORE_CLEANING_INTERVAL: 7200
+      CLEAN_STORE_MESSAGES: true
+      CLEAN_STORE_MESSAGE_UP: true
+      CLEAN_STORE_CHATS: true
+      CLEAN_STORE_CONTACTS: true
+      
+      # Language
+      LANGUAGE: pt-BR
+    
+    volumes:
+      - evolution_instances:/evolution/instances
+      - evolution_store:/evolution/store
+    
+    networks:
+      - zapflow_local
+    
+    depends_on:
+      - postgres_evolution
+      - redis_local
+
+  # Postgres para Evolution
+  postgres_evolution:
+    image: postgres:15-alpine
+    container_name: postgres_evolution_local
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${EVOL_DB_USER}
+      POSTGRES_PASSWORD: ${EVOL_DB_PASS}
+      POSTGRES_DB: evolution
+    volumes:
+      - postgres_evolution_data:/var/lib/postgresql/data
+    networks:
+      - zapflow_local
+    ports:
+      - "5433:5432"  # Porta diferente para não conflitar
+
+  # Redis
+  redis_local:
+    image: redis:7-alpine
+    container_name: redis_local
+    restart: unless-stopped
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_local_data:/data
+    networks:
+      - zapflow_local
+    ports:
+      - "6379:6379"
+
+volumes:
+  evolution_instances:
+  evolution_store:
+  postgres_evolution_data:
+  redis_local_data:
+
+networks:
+  zapflow_local:
+    driver: bridge

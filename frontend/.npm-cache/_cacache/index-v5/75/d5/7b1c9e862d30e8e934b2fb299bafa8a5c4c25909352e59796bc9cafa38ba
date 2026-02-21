@@ -1,0 +1,2 @@
+
+2392ef01b3c229cd82317c1fc55c8d9fc40b6659	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/entities","integrity":null,"time":1771354210000,"size":"0","metadata":{"time":1771354210000,"url":"http://registry.npmjs.org/entities","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Tue, 17 Feb 2026 18:50:09 GMT","location":"https://registry.npmjs.org/entities","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}
