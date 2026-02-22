@@ -1,8 +1,8 @@
-import './globals.css';
+import "./globals.css";
 
 export const metadata = {
-  title: 'Admin — ZapFlow',
-  description: 'Painel administrativo',
+  title: "Admin — ZapFlow",
+  description: "Painel administrativo",
 };
 
 export default function AdminLayout({ children }) {

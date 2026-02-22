@@ -1,13 +1,24 @@
+# ── Node & Next.js  ─────────────────
 node_modules/
 .next/
 out/
 build/
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+.env*
+*-debug.log*
 .DS_Store
+
+# ── ZapFlow: Dados Críticos (NÃO SUBIR) ────────────────
+# Isso impede que o banco de dados da VPS entre em conflito com o local
+postgres_data/
+evolution_data/
+redis_data/
+
+# ── ZapFlow: Uploads e Mídias ─────────────────────────
+# Impede que áudios e imagens de teste sujem o seu Git
+frontend/public/uploads/
+backend/uploads/
+
+# ── IDE & Docker ──────────────────────────────────────
+.vscode/
+.dockerignore
+*.save

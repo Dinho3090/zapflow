@@ -1,0 +1,2 @@
+
+f4bea140c5e7c13ea3fbc307405cfa2cc56cc6a6	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/pino-pretty","integrity":null,"time":1771784610192,"size":"0","metadata":{"time":1771784610192,"url":"http://registry.npmjs.org/pino-pretty","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sun, 22 Feb 2026 18:23:29 GMT","location":"https://registry.npmjs.org/pino-pretty","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

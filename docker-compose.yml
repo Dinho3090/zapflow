@@ -1,6 +1,7 @@
 version: '3.8'
 
 services:
+  # --- MOTOR DE WHATSAPP (Evolution) ---
   evolution:
     image: atendai/evolution-api:latest
     container_name: zf_evolution
@@ -9,19 +10,16 @@ services:
     environment:
       - SERVER_TYPE=http
       - SERVER_PORT=8080
-      - SERVER_URL=http://35.247.203.118:8080
+      - SERVER_URL=http://${DOMAIN}:8080
       - AUTHENTICATION_TYPE=apikey
-      - AUTHENTICATION_API_KEY=ntcp0shyre2l97bm6fduj4gq1zk8vxio
-      - AUTHENTICATION_GLOBAL_KEY=ntcp0shyre2l97bm6fduj4gq1zk8vxio
+      - AUTHENTICATION_API_KEY=${EVOLUTION_API_KEY}
       - DATABASE_ENABLED=true
       - DATABASE_PROVIDER=postgresql
-      - DATABASE_CONNECTION_URI=postgresql://evol_user:magsistem_senha_123@zf_postgres:5432/evolution?sslmode=disable
+      - DATABASE_CONNECTION_URI=postgresql://${EVOL_DB_USER}:${EVOL_DB_PASS}@zf_postgres:5432/evolution?sslmode=disable
       - CACHE_REDIS_ENABLED=true
       - CACHE_REDIS_URI=redis://zf_redis:6379
-      - CACHE_REDIS_PREFIX_KEY=evolution
       - WEBHOOK_GLOBAL_ENABLED=true
       - WEBHOOK_GLOBAL_URL=http://zf_backend:3001/webhook/evolution
-      - LOG_LEVEL=ERROR,WARN
     volumes:
       - evolution_data:/evolution/instances
     depends_on:
@@ -30,82 +28,70 @@ services:
     networks:
       - zf_net
 
+  # --- BANCO DE DATOS (Postgres) ---
   zf_postgres:
     image: postgres:15-alpine
     container_name: zf_postgres
     restart: always
     environment:
-      POSTGRES_USER: evol_user
-      POSTGRES_PASSWORD: magsistem_senha_123
+      POSTGRES_USER: ${EVOL_DB_USER}
+      POSTGRES_PASSWORD: ${EVOL_DB_PASS}
       POSTGRES_DB: evolution
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
       - zf_net
 
+  # --- CACHE (Redis) ---
   zf_redis:
     image: redis:7-alpine
     container_name: zf_redis
     restart: always
-    command: redis-server --maxmemory-policy noeviction
-    expose:
-      - 6379
-    volumes: 
-      - redis_data:/data
     networks:
       - zf_net
 
+  # --- BACKEND (Onde o Mimetismo Humano acontece) ---
   zf_backend:
     build:
       context: ./backend
-      dockerfile: Dockerfile.backend
+      dockerfile: Dockerfile # Mudamos de Dockerfile.backend para Dockerfile
     container_name: zf_backend
     restart: always
     ports: ["3001:3001"]
-    environment:
-      - NODE_ENV=production
-      - PORT=3001
-      - SUPABASE_URL=${SUPABASE_URL}
-      - SUPABASE_SERVICE_KEY=${SUPABASE_SERVICE_KEY}
-      - EVOLUTION_URL=http://zf_evolution:8080
-      - EVOLUTION_API_KEY=ntcp0shyre2l97bm6fduj4gq1zk8vxio
-      - REDIS_URL=redis://zf_redis:6379
-      - ADMIN_KEY=${ADMIN_KEY}
+    env_file: .env # Ele vai ler as chaves que preenchemos no arquivo .env
     depends_on:
       - zf_redis
       - evolution
     networks:
       - zf_net
 
+  # --- FRONTEND (Dashboard do Usuário) ---
   zf_frontend:
     build:
       context: ./frontend
-      dockerfile: Dockerfile.frontend
-      args:
-        - NEXT_PUBLIC_API_URL=http:https://dstrclhmlmbgaolstadj.supabase.co
-        - NEXT_PUBLIC_SUPABASE_URL=https://dstrclhmlmbgaolstadj.supabase.co
-        - NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRzdHJjbGhtbG1iZ2FvbHN0YWRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEzMjU5NjQsImV4cCI6MjA4NjkwMTk2NH0.38IqmHrdh_dd6Ekj0Eypgh3AbrNEyEeMrB27jDzMDgM
+      dockerfile: Dockerfile # Mudamos de Dockerfile.frontend para Dockerfile
     container_name: zf_frontend
     restart: always
     ports: ["3000:3000"]
-    environment:
-      - NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL}
-      - NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}
-      - NEXT_PUBLIC_API_URL=http://35.247.203.118:3001
+    env_file: .env
     depends_on:
       - zf_backend
     networks:
       - zf_net
 
+  # --- ADMIN (Validação de HWID e Licenças) ---
   zf_admin:
-    image: zapflow-zf_admin:latest
+    build:
+      context: ./admin
+      dockerfile: Dockerfile # Agora ele builda a pasta local que criamos
     container_name: zf_admin
-    environment:
-      - NEXT_PUBLIC_API_URL=http://admin.magsistem.com.br/api
+    restart: always
+    ports: ["3002:3002"]
+    env_file: .env
     networks:
       - zf_net
-    restart: always
 
+  # --- SERVIDOR WEB (Nginx) ---
   zf_nginx:
     image: nginx:stable-alpine
     container_name: zf_nginx
