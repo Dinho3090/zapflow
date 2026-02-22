@@ -1,0 +1,2 @@
+
+977f868fa32b5be4a878b225f8cd98e1d50dad78	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/scheduler","integrity":null,"time":1771789032099,"size":"0","metadata":{"time":1771789032099,"url":"http://registry.npmjs.org/scheduler","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sun, 22 Feb 2026 19:37:11 GMT","location":"https://registry.npmjs.org/scheduler","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+b08b8f9c3ae2a7948b04aad14c16fc9a1ed87198	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@swc%2fcounter","integrity":null,"time":1771789033190,"size":"0","metadata":{"time":1771789033190,"url":"http://registry.npmjs.org/@swc%2fcounter","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sun, 22 Feb 2026 19:37:12 GMT","location":"https://registry.npmjs.org/@swc%2Fcounter","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

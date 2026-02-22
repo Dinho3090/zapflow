@@ -1,0 +1,2 @@
+
+2343a4ba9bffb9fa3ed0b90c8d713f79f38f7e87	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/busboy","integrity":null,"time":1771789030868,"size":"0","metadata":{"time":1771789030868,"url":"http://registry.npmjs.org/busboy","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sun, 22 Feb 2026 19:37:09 GMT","location":"https://registry.npmjs.org/busboy","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

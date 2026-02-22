@@ -1,0 +1,2 @@
+
+39a375824c2040a8f329add42731d129aaa15527	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@next%2fswc-darwin-x64","integrity":null,"time":1771789031069,"size":"0","metadata":{"time":1771789031069,"url":"http://registry.npmjs.org/@next%2fswc-darwin-x64","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sun, 22 Feb 2026 19:37:10 GMT","location":"https://registry.npmjs.org/@next%2Fswc-darwin-x64","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

@@ -1,0 +1,2 @@
+
+8781033bdd302f168778ac8d08205079fda0a2c9	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/@playwright%2ftest","integrity":null,"time":1771789028362,"size":"0","metadata":{"time":1771789028362,"url":"http://registry.npmjs.org/@playwright%2ftest","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sun, 22 Feb 2026 19:37:07 GMT","location":"https://registry.npmjs.org/@playwright%2Ftest","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}

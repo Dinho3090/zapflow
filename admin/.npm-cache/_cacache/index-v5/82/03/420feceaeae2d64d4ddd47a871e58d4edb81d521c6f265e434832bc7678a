@@ -1,0 +1,2 @@
+
+c0294844c02e19ab30f276813bff69fef06a0bd6	{"key":"make-fetch-happen:request-cache:http://registry.npmjs.org/loose-envify","integrity":null,"time":1771789032167,"size":"0","metadata":{"time":1771789032167,"url":"http://registry.npmjs.org/loose-envify","reqHeaders":{"accept":"application/json"},"resHeaders":{"content-type":"text/plain;charset=UTF-8","date":"Sun, 22 Feb 2026 19:37:11 GMT","location":"https://registry.npmjs.org/loose-envify","vary":"Accept-Encoding"},"options":{"compress":true},"status":301}}
